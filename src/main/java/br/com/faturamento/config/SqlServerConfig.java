@@ -37,44 +37,23 @@ public class SqlServerConfig {
 		
 		switch (codigoServidor) {
 		case 1:			
-			// ISS NAVCARGA
-			driverClass = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-			driverUrl = "jdbc:sqlserver://ISSBRDBEMB001\\ISSI;DatabaseName=ISSNAVCARGA";	
-			driverUser = "NAV_READ";
-			driverPass = "Nav@2016";		
-			break;
+			
+			
 			
 		case 2:			
-			// LECOM 1
-			driverClass = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-			driverUrl = "jdbc:sqlserver://10.55.81.1:1433;DatabaseName=Lecom";	
-			driverUser = "NAV_READ";
-			driverPass = "Nav@2016";	
-			break;
+			
+			
 			
 		case 3:			
-			// LECOM 2
-			driverClass = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-			driverUrl = "jdbc:sqlserver://10.55.81.8:1433;DatabaseName=MAQ_PADRAO";	
-			driverUser = "NAV_READ";
-			driverPass = "Nav@2016";	
-			break;
+			
+			
 			
 		case 4:			
-			// BALESTRA INCREASE
-			driverClass = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-			driverUrl = "jdbc:sqlserver://10.55.81.1:1433; databaseName=PRICE_INCREASE;";	
-			driverUser = "price_inc";
-			driverPass = "price_inc";	
-			break;			
+		
+					
 			
 		case 5:			
-			// ISS AZURE
-			driverClass = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-			driverUrl = "jdbc:sqlserver://ISSBRDBAZ001; databaseName=MaquinaPadrao";	
-			driverUser = "MP";
-			driverPass = "M@quin@";		
-			break;
+			
 		}
 		
 		Class.forName(driverClass);
